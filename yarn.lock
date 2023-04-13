@@ -230,3 +230,8 @@ vite@^4.0.4:
     rollup "^3.18.0"
   optionalDependencies:
     fsevents "~2.3.2"
+
+web-vitals@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.npmjs.org/web-vitals/-/web-vitals-3.3.1.tgz#f80e4fd01784476c023c8b2c4219075bbe96f64d"
+  integrity sha512-LTfY5GjcY3ngFzNsYFSYL+AmVmlWrzPTUxSMDis2rZbf+SzT7HH3NH4Y/l45XOlrAIunOBeURN9qtBHkRskAiA==

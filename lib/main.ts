@@ -1,4 +1,15 @@
+import { onCLS, onFCP, onFID, onINP, onLCP, onTTFB } from "web-vitals";
 export function startPPanel() {
+  const paintHandle = (e) => {
+    console.log("paintHandle", e);
+  };
+  onCLS(paintHandle);
+  onFCP(paintHandle);
+  onFID(paintHandle);
+  onINP(paintHandle);
+  onLCP(paintHandle);
+  onTTFB(paintHandle);
+
   let id = "_performance_panel";
   if (document.getElementById(id)) {
     return;
