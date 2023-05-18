@@ -1,6 +1,6 @@
 {
   "name": "ppanel",
-  "version": "0.0.0-beta-0.6",
+  "version": "0.0.0-beta-0.7",
   "type": "module",
   "files": [
     "dist",
@@ -14,6 +14,7 @@
     "import": "./dist/ppanel.js",
     "require": "./dist/ppanel.umd.cjs"
   },
+  "keywords":["ppanel","performance","web-vitals","frontend"],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build"
