@@ -28,11 +28,11 @@ export function startPPanel() {
   container.innerHTML = `<canvas id="_fps_canvas" width="160" height="80" style="background-color: #001c36;margin-bottom:10px;border-radius: 8px;"></canvas>
     <canvas id="_memory_canvas" width="160" height="80" style="background-color: #001c36;border-radius: 8px;"></canvas>
     <div id='_web_vitals' style="display:flex;flex-wrap: wrap;font-size:12px;color:#ccc;margin-top:4px;">
+      <div id='_ppanel_LCP' style='width:50%;'>LCP：无</div>  
+      <div id='_ppanel_FID' style='width:50%;'>FID：无</div>
       <div id='_ppanel_CLS' style='width:50%;'>CLS：无</div>
       <div id='_ppanel_FCP' style='width:50%;'>FCP：无</div>
-      <div id='_ppanel_FID' style='width:50%;'>FID：无</div>
       <div id='_ppanel_INP' style='width:50%;'>INP：无</div>
-      <div id='_ppanel_LCP' style='width:50%;'>LCP：无</div>
       <div id='_ppanel_TTFB' style='width:50%;'>TTFB：无</div>
     </div>
     `;
