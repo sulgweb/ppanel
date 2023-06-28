@@ -54,6 +54,7 @@ export function startPPanel() {
     const cur = ev.touches ? ev.touches[0] : ev;
     disX = cur.clientX - panel.offsetLeft;
     disY = cur.clientY - panel.offsetTop;
+    ev.preventDefault();
   };
 
   const onMouseMove = (ev) => {
@@ -62,12 +63,14 @@ export function startPPanel() {
       panel.style.left = cur.clientX - disX + "px";
       panel.style.top = cur.clientY - disY + "px";
     }
+    ev.preventDefault();
   };
 
-  const onMouseUp = () => {
+  const onMouseUp = (ev) => {
     canMovePanel = false;
     localStorage.setItem("_ppanel_left", panel.style.left);
     localStorage.setItem("_ppanel_top", panel.style.top);
+    ev.preventDefault();
   };
 
   // 鼠标事件
